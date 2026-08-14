@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>For Sakshi ❤️</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);
-            t.async=1;
-            t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];
-            y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "y1i2dpwnbd");
-    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
-    <!-- FLOATING HEARTS -->
-    <div class="hearts-container" id="heartsContainer"></div>
 
+    <!-- =====================================================
+         LANDING PAGE
+    ====================================================== -->
 
-    <!-- =========================
-         INTRO
-    ========================== -->
+    <section id="landingPage" class="screen landing-page">
 
-    <section class="intro-screen" id="introScreen">
+        <div class="landing-background"></div>
 
-        <div class="intro-glow"></div>
+        <div class="landing-overlay"></div>
 
-        <div class="intro-content">
+        <div class="landing-content">
 
-            <p class="small-intro">
-                A little something...
+            <p class="eyebrow">
+                A LITTLE PLACE MADE FOR YOU
             </p>
 
-            <h1 id="introTitle"></h1>
+            <h1>
+                For
+                <span>Sakshi</span>
+            </h1>
 
-            <p class="intro-text" id="introText"></p>
+            <div class="small-line"></div>
 
-            <button class="start-btn" id="startBtn">
-                Open my heart ❤️
+            <p class="landing-message">
+                Dekhlo, aapke liye kuch messages hain meri taraf se ❤️
+            </p>
+
+            <button id="enterButton" class="main-button">
+                Enter
+                <span>♥</span>
             </button>
+
+            <p class="tiny-text">
+                take your time
+            </p>
 
         </div>
 
@@ -55,67 +65,81 @@
 
 
 
-    <!-- =========================
-         PASSWORD SCREEN
-    ========================== -->
+    <!-- =====================================================
+         PASSWORD PAGE
+    ====================================================== -->
 
-    <section
-        class="password-screen hidden"
-        id="passwordScreen"
-    >
+    <section id="passwordPage" class="screen password-page hidden">
 
-        <div class="password-glow"></div>
+        <div class="password-background"></div>
 
-        <div class="password-card">
+        <div class="password-overlay"></div>
 
-            <div class="password-heart">
-                ♡
+
+        <div id="passwordCard" class="glass-card password-card">
+
+            <div class="heart-icon">
+                ♥
             </div>
 
-            <p class="password-label">
-                JUST ONE LITTLE THING
+            <p class="eyebrow">
+                JUST FOR YOU
             </p>
 
             <h2>
-                Before you enter...
+                One little thing...
             </h2>
 
-            <p class="password-text">
-                You already know the answer.<br>
-                It's something only you would know. ❤️
+            <p class="password-message">
+                Dekhlo, aapke liye kuch messages hain meri taraf se ❤️
             </p>
 
-            <div class="password-hint">
 
-                <span>HINT</span>
+            <div class="hint-box">
 
-                <p>
-                    What did you save my name as?
-                </p>
+                <span>
+                    A LITTLE HINT
+                </span>
+
+                <strong>
+                    My name you saved in your phone
+                </strong>
 
             </div>
+
 
             <div class="password-input-box">
 
                 <input
-                    type="password"
                     id="passwordInput"
-                    placeholder="Enter the secret..."
+                    type="password"
+                    placeholder="Enter password"
                     autocomplete="off"
                 >
 
-                <button id="passwordButton">
-                    Enter ♡
+                <button
+                    id="showPassword"
+                    type="button"
+                >
+                    👁
                 </button>
 
             </div>
 
-            <p
-                class="password-error"
-                id="passwordError"
+
+            <button
+                id="unlockButton"
+                class="main-button full-button"
             >
-                Hmm... try again ❤️
-            </p>
+                Open
+                <span>♥</span>
+            </button>
+
+
+            <p
+                id="passwordError"
+                class="password-error"
+            ></p>
 
         </div>
 
@@ -123,42 +147,127 @@
 
 
 
-    <!-- =========================
+    <!-- =====================================================
          MAIN WEBSITE
-    ========================== -->
+    ====================================================== -->
 
-    <main
-        id="mainWebsite"
-        class="hidden"
-    >
+    <main id="mainWebsite" class="hidden">
 
-        <!-- HERO -->
 
-        <section class="hero">
+        <!-- =================================================
+             NAVBAR
+        ================================================== -->
 
-            <div class="hero-decoration">
-                ♡
+        <nav class="navbar">
+
+            <div class="logo">
+                S <span>♥</span> S
             </div>
 
+            <div class="nav-links">
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#story">
+                    Story
+                </a>
+
+                <a href="#memories">
+                    Memories
+                </a>
+
+                <a href="#video">
+                    Video
+                </a>
+
+                <a href="#sorry">
+                    Sorry
+                </a>
+
+            </div>
+
+        </nav>
+
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section
+            id="home"
+            class="hero section-track"
+            data-section="home"
+        >
+
             <p class="eyebrow">
-                FOR THE GIRL WHO MEANS THE WORLD TO ME
+                A LITTLE CORNER OF MY HEART
             </p>
 
-            <h2>
-                Sakshi
-                <span>❤️</span>
-            </h2>
+            <h1>
+                For
+                <span>Sakshi</span>
+            </h1>
+
+            <div class="small-line"></div>
 
             <p class="hero-description">
-                Some memories are too beautiful to simply be remembered.
-                They deserve a little place of their own.
+                Some memories are too beautiful
+                to let them disappear.
             </p>
 
-            <div class="scroll-indicator">
+            <a
+                href="#story"
+                class="scroll-button"
+            >
+                Start reading ↓
+            </a>
 
-                <span></span>
+        </section>
 
-                Scroll slowly...
+
+
+        <!-- =================================================
+             OUR STORY
+        ================================================== -->
+
+        <section
+            id="story"
+            class="section section-track"
+            data-section="story"
+        >
+
+            <div class="section-title">
+
+                <p class="eyebrow">
+                    OUR STORY
+                </p>
+
+                <h2>
+                    Some moments just stay.
+                </h2>
+
+            </div>
+
+
+            <div class="story-card glass-card">
+
+                <p>
+                    Kuch memories aisi hoti hain jo kitna bhi
+                    time beet jaaye, dil aur dimaag dono mein
+                    waise hi reh jaati hain.
+                </p>
+
+                <p>
+                    Ye website unhi kuch moments ke liye hai.
+                </p>
+
+                <p>
+                    Kuch photos, kuch feelings,
+                    aur bahut saari yaadein. ❤️
+                </p>
 
             </div>
 
@@ -166,410 +275,288 @@
 
 
 
-        <!-- =========================
+        <!-- =================================================
              MEMORIES
-        ========================== -->
+        ================================================== -->
 
         <section
-            class="memories-section"
             id="memories"
+            class="section memories-section section-track"
+            data-section="memories"
         >
 
-            <div class="section-heading">
+            <div class="section-title">
 
-                <p class="section-label">
-                    OUR LITTLE WORLD
+                <p class="eyebrow">
+                    OUR MEMORIES
                 </p>
 
                 <h2>
-                    Things I never want<br>
-                    to forget.
+                    Kuch yaadein...
                 </h2>
 
                 <p>
-                    Click on a memory.
-                    I have something to tell you inside each one.
+                    Photo par hover karo.
+                    Click karo toh poori memory dekho. ❤️
                 </p>
 
             </div>
+
 
 
             <div class="memory-grid">
 
 
-                <!-- MEMORY 1 -->
+                <!-- MEMORY BLACK -->
 
                 <article
                     class="memory-card"
-                    data-memory="0"
+                    data-memory="memory-black.jpeg"
                 >
 
-                    <div class="memory-image">
-
-                        <img
-                            src="assets/images/memory1.jpg"
-                            alt="Memory 1"
-                        >
-
-                        <div class="image-placeholder">
-
-                            <span>♡</span>
-
-                            <small>
-                                Memory 01
-                            </small>
-
-                        </div>
-
-                        <div class="card-overlay">
-
-                            <span>
-                                Open memory →
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="memory-card-content">
-
-                        <span>01</span>
-
-                        <h3>
-                            The beginning
-                        </h3>
-
-                        <p>
-                            Where everything started...
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- MEMORY 2 -->
-
-                <article
-                    class="memory-card"
-                    data-memory="1"
-                >
-
-                    <div class="memory-image">
-
-                        <img
-                            src="assets/images/memory2.jpg"
-                            alt="Memory 2"
-                        >
-
-                        <div class="image-placeholder">
-
-                            <span>♡</span>
-
-                            <small>
-                                Memory 02
-                            </small>
-
-                        </div>
-
-                        <div class="card-overlay">
-
-                            <span>
-                                Open memory →
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="memory-card-content">
-
-                        <span>02</span>
-
-                        <h3>
-                            A beautiful day
-                        </h3>
-
-                        <p>
-                            One of those days I still smile about.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- MEMORY 3 -->
-
-                <article
-                    class="memory-card"
-                    data-memory="2"
-                >
-
-                    <div class="memory-image">
-
-                        <img
-                            src="assets/images/memory3.jpg"
-                            alt="Memory 3"
-                        >
-
-                        <div class="image-placeholder">
-
-                            <span>♡</span>
-
-                            <small>
-                                Memory 03
-                            </small>
-
-                        </div>
-
-                        <div class="card-overlay">
-
-                            <span>
-                                Open memory →
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="memory-card-content">
-
-                        <span>03</span>
-
-                        <h3>
-                            That smile
-                        </h3>
-
-                        <p>
-                            Something I could never get tired of.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- MEMORY 4 -->
-
-                <article
-                    class="memory-card"
-                    data-memory="3"
-                >
-
-                    <div class="memory-image">
-
-                        <img
-                            src="assets/images/memory4.jpg"
-                            alt="Memory 4"
-                        >
-
-                        <div class="image-placeholder">
-
-                            <span>♡</span>
-
-                            <small>
-                                Memory 04
-                            </small>
-
-                        </div>
-
-                        <div class="card-overlay">
-
-                            <span>
-                                Open memory →
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="memory-card-content">
-
-                        <span>04</span>
-
-                        <h3>
-                            The little things
-                        </h3>
-
-                        <p>
-                            The moments that meant more than they seemed.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- MEMORY 5 -->
-
-                <article
-                    class="memory-card"
-                    data-memory="4"
-                >
-
-                    <div class="memory-image">
-
-                        <img
-                            src="assets/images/memory5.jpg"
-                            alt="Memory 5"
-                        >
-
-                        <div class="image-placeholder">
-
-                            <span>♡</span>
-
-                            <small>
-                                Memory 05
-                            </small>
-
-                        </div>
-
-                        <div class="card-overlay">
-
-                            <span>
-                                Open memory →
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="memory-card-content">
-
-                        <span>05</span>
-
-                        <h3>
-                            My favourite moments
-                        </h3>
-
-                        <p>
-                            Some memories deserve to stay forever.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- MEMORY 6 -->
-
-                <article
-                    class="memory-card"
-                    data-memory="5"
-                >
-
-                    <div class="memory-image">
-
-                        <img
-                            src="assets/images/memory6.jpg"
-                            alt="Memory 6"
-                        >
-
-                        <div class="image-placeholder">
-
-                            <span>♡</span>
-
-                            <small>
-                                Memory 06
-                            </small>
-
-                        </div>
-
-                        <div class="card-overlay">
-
-                            <span>
-                                Open memory →
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="memory-card-content">
-
-                        <span>06</span>
-
-                        <h3>
-                            Always you
-                        </h3>
-
-                        <p>
-                            And somehow, it always comes back to you.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             VIDEO
-        ========================== -->
-
-        <section
-            class="video-section"
-            id="videoSection"
-        >
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    A LITTLE VIDEO
-                </p>
-
-                <h2>
-                    There are some things<br>
-                    I wanted to say.
-                </h2>
-
-                <p>
-                    So instead of writing everything here...
-                    I made something for you.
-                </p>
-
-            </div>
-
-
-            <div class="video-wrapper">
-
-                <div class="video-container">
-
-                    <iframe
-                        id="youtubeVideo"
-                        src=""
-                        title="For Sakshi"
-                        allow="autoplay; encrypted-media; picture-in-picture"
-                        allowfullscreen
-                    ></iframe>
-
-                    <div
-                        class="video-placeholder"
-                        id="videoPlaceholder"
+                    <img
+                        src="memory-black.jpeg"
+                        alt="Memory"
                     >
 
-                        <div class="play-symbol">
-                            ▶
+                    <div class="memory-overlay">
+
+                        <div>
+                            ♥
                         </div>
 
-                        <p>
-                            Your video will appear here ❤️
-                        </p>
+                        <span>
+                            Click to read
+                        </span>
 
                     </div>
 
-                </div>
+                </article>
+
+
+
+                <!-- MEMORY BLUE -->
+
+                <article
+                    class="memory-card"
+                    data-memory="memory-blue.jpeg"
+                >
+
+                    <img
+                        src="memory-blue.jpeg"
+                        alt="Memory"
+                    >
+
+                    <div class="memory-overlay">
+
+                        <div>
+                            ♥
+                        </div>
+
+                        <span>
+                            One very special day
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- MEMORY FUNNY -->
+
+                <article
+                    class="memory-card"
+                    data-memory="memory-funny.jpeg"
+                >
+
+                    <img
+                        src="memory-funny.jpeg"
+                        alt="Memory"
+                    >
+
+                    <div class="memory-overlay">
+
+                        <div>
+                            ♥
+                        </div>
+
+                        <span>
+                            Those little moments
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- MEMORY GREEN -->
+
+                <article
+                    class="memory-card"
+                    data-memory="memory-green.jpeg"
+                >
+
+                    <img
+                        src="memory-green.jpeg"
+                        alt="Memory"
+                    >
+
+                    <div class="memory-overlay">
+
+                        <div>
+                            ♥
+                        </div>
+
+                        <span>
+                            I still remember this
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- MEMORY LAUGH -->
+
+                <article
+                    class="memory-card"
+                    data-memory="memory-laugh.jpeg"
+                >
+
+                    <img
+                        src="memory-laugh.jpeg"
+                        alt="Memory"
+                    >
+
+                    <div class="memory-overlay">
+
+                        <div>
+                            ♥
+                        </div>
+
+                        <span>
+                            That smile...
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- MEMORY MAROON -->
+
+                <article
+                    class="memory-card"
+                    data-memory="memory-maroon.jpeg"
+                >
+
+                    <img
+                        src="memory-maroon.jpeg"
+                        alt="Memory"
+                    >
+
+                    <div class="memory-overlay">
+
+                        <div>
+                            ♥
+                        </div>
+
+                        <span>
+                            Hoor or pari...
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- MEMORY PURPLE -->
+
+                <article
+                    class="memory-card"
+                    data-memory="memory-purple.jpeg"
+                >
+
+                    <img
+                        src="memory-purple.jpeg"
+                        alt="Memory"
+                    >
+
+                    <div class="memory-overlay">
+
+                        <div>
+                            ♥
+                        </div>
+
+                        <span>
+                            Our favourite place
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- MEMORY ROAD -->
+
+                <article
+                    class="memory-card"
+                    data-memory="memory-road.jpeg"
+                >
+
+                    <img
+                        src="memory-road.jpeg"
+                        alt="Memory"
+                    >
+
+                    <div class="memory-overlay">
+
+                        <div>
+                            ♥
+                        </div>
+
+                        <span>
+                            Maybe it was always you
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- MEMORY WHITE -->
+
+                <article
+                    class="memory-card"
+                    data-memory="memory-white.jpeg"
+                >
+
+                    <img
+                        src="memory-white.jpeg"
+                        alt="Memory"
+                    >
+
+                    <div class="memory-overlay">
+
+                        <div>
+                            ♥
+                        </div>
+
+                        <span>
+                            Our lunch place
+                        </span>
+
+                    </div>
+
+                </article>
+
 
             </div>
 
@@ -577,64 +564,171 @@
 
 
 
-        <!-- =========================
-             SORRY
-        ========================== -->
+        <!-- =================================================
+             VIDEO
+        ================================================== -->
 
         <section
-            class="sorry-section locked"
-            id="sorrySection"
+            id="video"
+            class="section video-section section-track"
+            data-section="video"
         >
 
-            <div
-                class="sorry-lock"
-                id="sorryLock"
-            >
+            <div class="section-title">
 
-                <div class="lock-icon">
-                    🔒
-                </div>
+                <p class="eyebrow">
+                    WATCH THIS
+                </p>
 
                 <h2>
-                    One last thing...
+                    I made this for you.
                 </h2>
 
                 <p>
-                    Watch the video first.
+                    Jaise hi video section par jaoge,
+                    video play hone ki koshish karega.
                 </p>
-
-                <span>
-                    ❤️
-                </span>
 
             </div>
 
 
-            <div
-                class="sorry-content"
-                id="sorryContent"
-            >
+            <div class="video-container">
 
-                <p class="section-label">
-                    FROM MY HEART
-                </p>
-
-                <h2>
-                    I'm sorry.
-                </h2>
+                <div id="youtubePlayer"></div>
 
                 <div
-                    class="sorry-letter"
-                    id="sorryLetter"
-                ></div>
+                    id="videoFallback"
+                    class="video-fallback"
+                >
 
-                <div class="final-heart">
+                    <p>
+                        Your video will appear here ❤️
+                    </p>
+
+                    <button
+                        id="playVideoButton"
+                        class="main-button"
+                    >
+                        Play Video
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="video-progress">
+
+                <div class="progress-background">
+
+                    <span id="videoProgress"></span>
+
+                </div>
+
+                <p id="videoProgressText">
+                    0% watched
+                </p>
+
+            </div>
+
+
+            <div class="watch-more-box">
+
+                <button
+                    id="watchMoreButton"
+                    class="main-button"
+                >
+                    Please click here, there's a lot more for you to know ❤️
+                </button>
+
+            </div>
+
+        
+
+        </section>
+
+
+
+        <!-- =================================================
+             SORRY CARD
+        ================================================== -->
+
+        <section
+            id="sorry"
+            class="section sorry-section section-track hidden"
+            data-section="sorry"
+        >
+
+            <div class="sorry-card glass-card">
+
+                <div class="heart-icon">
                     ♥
                 </div>
 
-                <p class="final-line">
-                    No matter what happens,
-                    you will always have a very special place in my heart.
+                <p class="eyebrow">
+                    ONE LAST THING
+                </p>
+
+                <h2>
+                    I'm Sorry.
+                </h2>
+
+                <div class="small-line"></div>
+
+
+                <div class="sorry-message">
+
+                    <p>
+                        Yahan apna actual sorry message
+                        likhna hai.
+                    </p>
+
+                    <p>
+                        Jo bhi dil mein hai,
+                        simple words mein.
+                    </p>
+
+                    <p>
+                        No fancy words.
+                        Bas jo sach mein kehna hai. ❤️
+                    </p>
+
+                </div>
+
+
+                <div class="signature">
+                    — Shivansh ❤️
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FINAL
+        ================================================== -->
+
+        <section class="final-section">
+
+            <div>
+
+                <div class="heart-icon">
+                    ♥
+                </div>
+
+                <p class="eyebrow">
+                    THAT'S ALL
+                </p>
+
+                <h2>
+                    Thank you for being
+                    a part of my memories.
+                </h2>
+
+                <p class="initials">
+                    S ♥ S
                 </p>
 
             </div>
@@ -643,46 +737,231 @@
 
 
 
-        <!-- FOOTER -->
+        <!-- =================================================
+             FOOTER
+        ================================================== -->
 
         <footer>
 
-            <p>
-                Made with love, memories & a little bit of courage.
-            </p>
-
-            <span>
-                For Sakshi ❤️
-            </span>
+            Made with love for Sakshi ♥
 
         </footer>
+
 
     </main>
 
 
 
-    <!-- =========================
-         MEMORY MODAL
-    ========================== -->
+
+<!-- =====================================================
+     BIRTHDAY EXPERIENCE
+====================================================== -->
+
+<div id="birthdayOverlay" class="birthday-overlay">
+
+    <div id="birthdayCard" class="birthday-card">
+
+        <button
+            id="birthdayClose"
+            class="birthday-close"
+            type="button"
+            aria-label="Close"
+        >
+            ×
+        </button>
+
+        <div class="birthday-top">
+            <span id="birthdayCounter">01 / 10</span>
+            <span>FOR SAKSHI ❤️</span>
+        </div>
+
+        <div class="birthday-progress">
+            <span id="birthdayProgress"></span>
+        </div>
+
+        <div class="birthday-media">
 
     <div
-        class="memory-modal"
-        id="memoryModal"
+        class="birthday-loader"
+        id="birthdayLoader"
     >
+        Loading your memory... ❤️
+    </div>
 
-        <div class="modal-backdrop"></div>
+    <img
+        id="birthdayImage"
+        class="birthday-image"
+        alt="Birthday memory"
+    />
 
-        <div class="modal-box">
+    <video
+        id="birthdayVideo"
+        class="birthday-video"
+        playsinline
+        muted
+        preload="auto"
+        controls
+    ></video>
+
+</div>
+
+        <div class="birthday-copy">
+
+            <p id="birthdayEyebrow" class="eyebrow">
+                A LITTLE MEMORY
+            </p>
+
+            <h2 id="birthdayTitle">
+                Happy Birthday ❤️
+            </h2>
+
+            <div class="birthday-line"></div>
+
+            <p id="birthdayText"></p>
+
+        </div>
+
+        <div class="birthday-actions">
 
             <button
-                class="close-modal"
+                id="birthdayPrev"
+                class="birthday-button secondary"
+                type="button"
+            >
+                ← Previous
+            </button>
+
+            <button
+                id="birthdayNext"
+                class="birthday-button"
+                type="button"
+            >
+                Next ❤️
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+    <!-- =====================================================
+         BIRTHDAY → SORRY TRANSITION
+    ====================================================== -->
+
+    <div
+        id="sorryTransition"
+        class="sorry-transition"
+        aria-hidden="true"
+    >
+        <div class="sorry-transition-content">
+            <p class="eyebrow">EK AUR BAAT...</p>
+            <h2>Kuch aur bhi hai...<br>ji kehna hai tumse. ❤️</h2>
+            <div class="small-line"></div>
+        </div>
+    </div>
+
+
+    <!-- =====================================================
+         SORRY EXPERIENCE
+    ====================================================== -->
+
+    <section
+        id="sorryExperience"
+        class="sorry-experience"
+        aria-hidden="true"
+    >
+        <div class="sorry-experience-card">
+
+            <button
+                id="sorryClose"
+                class="sorry-close"
+                type="button"
+                aria-label="Close"
+            >×</button>
+
+            <div class="sorry-video-wrap">
+
+                <video
+                    id="sorryVideo"
+                    class="sorry-video"
+                    src="sorry.mp4"
+                    playsinline
+                    preload="auto"
+                    controls
+                ></video>
+
+                <div
+                    id="sorryVideoMessage"
+                    class="sorry-video-message"
+                >
+                    Tap play if the video doesn't start automatically. ❤️
+                </div>
+
+            </div>
+
+            <div class="sorry-letter">
+
+                <p class="eyebrow">
+                    BAS EK MAUKA, SAKSHI... ❤️
+                </p>
+
+                <h2>
+                    I am sorry. Sach mein… dil se.
+                </h2>
+
+                <div class="small-line"></div>
+
+                <div
+                    id="sorryLetterText"
+                    class="sorry-letter-text"
+                ></div>
+
+                <img
+                    class="sorry-ending-photo"
+                    src="sorry-ending.jpeg"
+                    alt="A memory of us"
+                >
+
+                <p class="sorry-ending-line">
+                    Bas ek mauka, Sakshi. ❤️
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         MEMORY POPUP / MODAL
+    ====================================================== -->
+
+    <div
+        id="memoryModal"
+        class="memory-modal"
+    >
+
+        <div
+            id="modalBackdrop"
+            class="modal-backdrop"
+        ></div>
+
+
+        <div class="modal-card">
+
+
+            <button
                 id="closeModal"
+                class="close-modal"
             >
                 ×
             </button>
 
 
-            <div class="modal-image-container">
+            <div class="modal-image">
 
                 <img
                     id="modalImage"
@@ -693,67 +972,26 @@
             </div>
 
 
-            <div class="modal-details">
+            <div class="modal-content">
 
-                <span id="modalNumber">
-                    01
-                </span>
-
-                <h2 id="modalTitle">
-                    Memory
-                </h2>
-
-                <div
-                    class="typewriter-text"
-                    id="modalText"
-                ></div>
-
-
-                <div class="audio-player">
-
-                    <button
-                        id="audioButton"
-                        class="audio-button"
-                    >
-                        ▶
-                    </button>
-
-                    <div class="audio-info">
-
-                        <span>
-                            A little piece of music
-                        </span>
-
-                        <div class="audio-progress">
-
-                            <div
-                                id="audioProgress"
-                            ></div>
-
-                        </div>
-
-                    </div>
-
+                <div class="heart-icon">
+                    ♥
                 </div>
 
+                <p
+                    id="modalMessage"
+                    class="modal-message"
+                ></p>
 
-                <div class="modal-navigation">
-
-                    <button id="prevMemory">
-                        ← Previous
-                    </button>
-
-                    <span id="memoryCounter">
-                        1 / 6
-                    </span>
-
-                    <button id="nextMemory">
-                        Next →
-                    </button>
-
-                </div>
+                <p
+                    id="audioStatus"
+                    class="audio-status"
+                >
+                    ♫ memory
+                </p>
 
             </div>
+
 
         </div>
 
@@ -761,16 +999,20 @@
 
 
 
-    <!-- BACKGROUND AUDIO -->
+    <!-- =====================================================
+         YOUTUBE API
+    ====================================================== -->
 
-    <audio
-        id="backgroundAudio"
-        loop
-        preload="auto"
-    ></audio>
+    <script src="https://www.youtube.com/iframe_api"></script>
 
+
+    <!-- =====================================================
+         MAIN JAVASCRIPT
+    ====================================================== -->
 
     <script src="script.js"></script>
 
+
 </body>
+
 </html>
