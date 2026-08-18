@@ -719,7 +719,169 @@
 
         </section>
 
+        <!-- ================================
+           OPEN WHEN SECTION
+          ================================ -->
 
+<section id="open-when-section" class="open-when-section">
+
+    <div class="open-when-header">
+
+        <div class="open-when-label">
+            A FEW LETTERS FOR YOU
+        </div>
+
+        <h2>
+            Open When... 💌
+        </h2>
+
+        <p>
+            Kuch letters kuch particular moments ke liye hote hain...
+            <br>
+            Jab bhi tumhe inmein se kisi ki zarurat lage,
+            bas usse open kar lena. ❤️
+        </p>
+
+    </div>
+
+
+    <div class="open-when-grid">
+
+
+        <!-- CARD 1 -->
+
+        <div class="open-when-card missing-me-card"
+             onclick="openLetter('missing')">
+
+            <div class="open-when-overlay"></div>
+
+            <div class="open-when-card-content">
+
+                <div class="open-when-icon">
+                    💌
+                </div>
+
+                <h3>
+                    Open When You're<br>
+                    Missing Me
+                </h3>
+
+                <span>
+                    Open Letter →
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 2 -->
+
+        <div class="open-when-card sleep-card"
+             onclick="openLetter('sleep')">
+
+            <div class="open-when-overlay"></div>
+
+            <div class="open-when-card-content">
+
+                <div class="open-when-icon">
+                    🌙
+                </div>
+
+                <h3>
+                    Open When You<br>
+                    Can't Sleep
+                </h3>
+
+                <span>
+                    Open Letter →
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 3 -->
+
+        <div class="open-when-card bad-day-card"
+             onclick="openLetter('badday')">
+
+            <div class="open-when-overlay"></div>
+
+            <div class="open-when-card-content">
+
+                <div class="open-when-icon">
+                    🥺
+                </div>
+
+                <h3>
+                    Open When You're<br>
+                    Having a Bad Day
+                </h3>
+
+                <span>
+                    Open Letter →
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 4 -->
+
+        <div class="open-when-card remember-card"
+             onclick="openLetter('remember')">
+
+            <div class="open-when-overlay"></div>
+
+            <div class="open-when-card-content">
+
+                <div class="open-when-icon">
+                    ❤️
+                </div>
+
+                <h3>
+                    Open When You<br>
+                    Remember Us
+                </h3>
+
+                <span>
+                    Open Letter →
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     LETTER POPUP
+================================ -->
+
+<div id="letter-modal" class="letter-modal">
+
+    <div class="letter-box">
+
+        <button class="letter-close"
+                onclick="closeLetter()">
+            ×
+        </button>
+
+        <div id="letter-content"></div>
+
+    </div>
+
+</div>
 
         <!-- =================================================
              FINAL
@@ -1012,6 +1174,7 @@
         </div>
 
     </div>
+    
 
 
 

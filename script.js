@@ -7582,8 +7582,303 @@ AFTER BIRTHDAY
 → Full apology text
 → Final photo
 → Happy Birthday + Sorry
+OPEN WHEN
+→ 💌 Missing Me
+→ 🌙 Can't Sleep
+→ 🥺 Bad Day
+→ ❤️ Remember Us
+→ 4 personal letters
+
+END ❤️
 → END
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 `
 );
+/* ==========================================
+   OPEN WHEN SECTION
+========================================== */
+
+function showOpenWhen() {
+
+    const section =
+        document.getElementById("open-when-section");
+
+    if (!section) return;
+
+    section.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+}
+
+
+/* ==========================================
+   LETTER DATA
+========================================== */
+
+const openWhenLetters = {
+
+    missing: {
+        title: "💌 Open When You're Missing Me",
+
+        text: `know tum mujhe miss kar rahi hogi…
+agar meri tarah tum bhi karti ho toh. ❤️
+
+Sach bataun, jab mujhe tumhari bahut yaad aati hai na, main bas aankhein band karke tumhe imagine karta hoon.
+
+Imagine karta hoon ki tum mere paas hoti…
+mere face ko pyaar se touch karti, mera haath pakadti aur kehti—
+
+“Main hoon na.” ❤️
+
+Aur main tumhe apne paas bitha kar bolta—
+
+“Haan bacche, main bhi hoon na. Batao kya hua?”
+
+Family ka?
+Isha di ka?
+Padhai ka stress?
+Ya bas aaj ka din hi kharab tha?
+
+Batao mujhe. Main hoon na.
+
+Har cheez tumhe akela handle karne ki zarurat nahi hai. Kabhi thak jao toh ruk jaana, kabhi rona aaye toh ro lena… bas khud ko akela mat samajhna.
+
+Imagine karo main tumhare paas baitha hoon, tumhara haath mere haath mein hai, tumhara sar mere shoulder par hai…
+
+Aur main dheere se bol raha hoon—
+
+“Bacche, tension mat le.
+Jo bhi hai, milke handle kar lenge.
+Main hoon tere saath.” ❤️
+
+Aur jab tum thoda smile karogi na…
+
+main beech mein—
+
+“Lululululululu bhaaaap.” 😂❤️
+
+Bas tumhari woh smile dekhne ke liye.
+
+Toh jab bhi meri yaad aaye, aankhein band kar lena.
+
+Maybe main physically tumhare paas nahi hoon…
+
+but for those few minutes, let me be there with you. ❤️
+
+Bas aankhein band karna…
+aur mujhe apne paas feel karna.`
+    },
+
+
+    sleep: {
+        title: "🌙 Open When You Can't Sleep",
+
+        text: `Shayad abhi tumhe neend nahi aa rahi hogi…
+
+Mujhe bhi kabhi-kabhi nahi aati.
+Phir main tumhare purane messages yaad karne lagta hoon—woh saari late-night conversations jo pata hi nahi chalne deti thi ki raat kitni ho gayi.
+
+Humari normal si baat bhi normal kahan rehti thi. 😂
+Kabhi meri baat double meaning ho jaati, kabhi tum mujhe tease karti, kabhi main tumhe… aur phir table turn hote-hote poori raat nikal jaati thi. 😂❤️
+
+Kabhi tum poochti—
+
+“Agar main hoti toh kya karte?”
+
+Aur kabhi main—
+
+“Agar main hota toh tum kya karti?”
+
+Aur bas… hum ussi mein lage rehte.
+
+Agar tum abhi mere paas hoti na, toh main tumhare bagal mein aakar tumhara haath pakadta aur apni woh besuri si awaaz sunaata, jo pata nahi tumhe kabhi pyaari kaise lagti thi. 😂❤️
+
+Aur meri toh aadat thi—mujhe neend na aaye toh tumhe bhi sone nahi deta tha. Thoda aur tease karta, thoda aur pareshan karta…
+
+Aur jab tumhari aankhein finally band hone lagti, tab dheere se bolta—
+
+“Mera baccha hai toh…
+mera shona hai toh…
+meri aankhon ka taara hai toh…
+ab chup-chaap so jao.” ❤️
+
+Phir shayad tum so jaati…
+aur main tumhare paas hi pada rehta.
+
+Tumhara haath pakad kar.
+
+Toh agar aaj raat neend nahi aa rahi…
+
+Aankhein band karo aur imagine karo ki main tumhare paas hoon, tumhara haath mere haath mein hai…
+
+Aur main dheere se bol raha hoon—
+
+“Bas bacche… ab so jao.
+Main hoon na.
+Good night, mera baccha.
+Mera shona.
+Meri aankhon ka taara. ❤️”
+
+Ab aankhein band karo…
+aur so jao. 🌙❤️`
+    },
+
+
+    badday: {
+        title: "🥺 Open When You're Having a Bad Day",
+
+        text: `Aaj ka din theek nahi gaya?
+Target miss ho gaya?
+
+Koi nahi bacche… kal thoda aur time de dena. Tum kar logi. ❤️
+
+Ek din kharab ho jaana ya ek target miss ho jaana iska matlab ye nahi ki tum nahi kar sakti. Kabhi-kabhi cheezein humare hisaab se nahi hoti… but that doesn't mean you've lost.
+
+Aur agar kabhi lage ki sab kuch ulta ho raha hai na, toh meri baat yaad karna.
+
+“Shivansh, tum kar loge.”
+
+Tumhari ye line mujhe bhi bahut baar wapas khada kar deti hai. ❤️
+
+Shayad tumhe meri woh gyan dene wali aadat bhi yaad aati hogi. 😂
+Har cheez mein lecture—ye karo, aise karo, tension mat lo, ho jayega.
+
+Haan, shayad tumhe kabhi-kabhi mera gyaan pasand nahi aata tha… 😂
+but I always just wanted to see you doing better.
+
+Aur ab sochta hoon—
+
+Chalo, abhi nahi pasand aaya toh kya hua… kabhi na kabhi toh pasand aa hi jaunga. 😂❤️
+
+Toh aaj bas sab side mein rakho, ek deep breath lo aur meri cute si awaaz imagine karo—
+
+“Lulululululululul bhaaaap.” 😂❤️
+
+Aur phir khud se bolna—
+
+“Kal phir se karungi. Aur iss baar aur achhe se karungi… kyunki main kar sakti hoon.”
+
+Kyuki haan bacche…
+
+tum kar sakti ho.
+Tum hamesha se kar sakti thi. ❤️
+
+Aur agar aaj kisi ne nahi bola toh meri taraf se—
+
+I am proud of you. ❤️
+
+Ab smile karo…
+
+Lulululululululul bhaaaap. 😂❤️`
+    },
+
+
+    remember: {
+        title: "❤️ Open When You Remember Us",
+
+        text: `Jab bhi tumhe hum yaad aaye na…
+uss bench par chale jaana.
+
+Main toh roz jaata hoon. Kabhi bas usse dekhta hoon aur humari woh saari baatein yaad aa jaati hain—woh random conversations, hasi-mazaak, serious talks… sab kuch.
+
+Aaj bhi yaad hai, last time tumne wahi mera 2 April wala birthday celebrate kiya tha, woh book di thi aur agle din skipping rope. ❤️
+
+Jagah wahi hai, bench wahi hai… bas tum nahi ho.
+
+Sach bataun Sakshi, mujhe tum bahut yaad aati ho. Kabhi mann karta hai tumse baat karun, apna din bataun, kuch random sa share karun… aur jab baat nahi ho paati, toh main yahin aa jaata hoon.
+
+Tumse baat nahi ho rahi toh kya hua…
+
+Tumhari yaadein toh hain.
+Tumhari cheezein toh hain.
+Aur humari woh bench bhi hai.
+
+Isliye jab bhi main tumhe miss karunga, yahin aaunga… kuch likhunga, apna update chhod jaunga. Shayad website har baar updated na ho, par main aata rahunga.
+
+Aur jab tumhe hum yaad aaye na, bas uss bench par thodi der baithna…
+
+Shayad tumhe bhi humari koi baat yaad aa jaaye.
+
+Aur shayad ussi waqt, kahin na kahin, main bhi tumhe yaad kar raha honga. ❤️
+
+Jagah wahi hai… bas dil karta hai, kaash tum bhi wahi hoti.`
+    }
+
+};
+
+
+/* ==========================================
+   OPEN LETTER
+========================================== */
+
+function openLetter(letterName) {
+
+    const letter =
+        openWhenLetters[letterName];
+
+    if (!letter) return;
+
+    const modal =
+        document.getElementById("letter-modal");
+
+    const content =
+        document.getElementById("letter-content");
+
+    content.innerHTML = `
+        <div class="letter-content-title">
+            ${letter.title}
+        </div>
+
+        <div class="letter-content-body">
+            ${letter.text}
+        </div>
+    `;
+
+    modal.classList.add("active");
+
+    document.body.style.overflow = "hidden";
+}
+
+
+/* ==========================================
+   CLOSE LETTER
+========================================== */
+
+function closeLetter() {
+
+    const modal =
+        document.getElementById("letter-modal");
+
+    modal.classList.remove("active");
+
+    document.body.style.overflow = "";
+}
+
+
+/* CLICK OUTSIDE LETTER */
+
+document.addEventListener("click", function(event) {
+
+    const modal =
+        document.getElementById("letter-modal");
+
+    if (
+        event.target === modal
+    ) {
+        closeLetter();
+    }
+
+});
+
+
+/* ESC KEY */
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+        closeLetter();
+    }
+
+});
